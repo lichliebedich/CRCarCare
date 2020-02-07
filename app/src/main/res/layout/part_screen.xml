@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="@color/SkyBlue"
+    tools:context="crcarcare.datasolution.app.crcarcare.MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+<LinearLayout
+    android:id="@+id/header"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+	android:background="#6F4E37"
+    android:paddingBottom="5dip"
+    android:paddingTop="5dip" >
+
+                 <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_license_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="ทะเบียนรถ :"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_mileno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="เลขไมล์ :"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+        </LinearLayout>
+      
+        <TextView
+            android:id="@+id/tv_Depart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="เลขที่ใบสั่งซ่อม :"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="16sp" />
+
+ 		<LinearLayout
+ 		    android:layout_width="match_parent"
+ 		    android:layout_height="wrap_content"
+ 		    android:paddingBottom="20dp" >
+
+ 		    <TextView
+ 		        android:id="@+id/tv_brand"
+ 		        android:layout_width="wrap_content"
+ 		        android:layout_height="wrap_content"
+ 		        android:paddingLeft="10dp"
+ 		        android:paddingRight="20dp"
+ 		        android:paddingTop="10dp"
+ 		        android:text="ยี่ห้อ :"
+ 		        android:textAppearance="?android:attr/textAppearanceLarge"
+ 		        android:textSize="16sp" />
+
+ 		    <TextView
+ 		        android:id="@+id/tv_model"
+ 		        android:layout_width="wrap_content"
+ 		        android:layout_height="wrap_content"
+ 		        android:paddingLeft="10dp"
+ 		        android:paddingRight="40dp"
+ 		        android:paddingTop="10dp"
+ 		        android:text="รุ่น :"
+ 		        android:textAppearance="?android:attr/textAppearanceLarge"
+ 		        android:textSize="16sp" />
+
+ 		</LinearLayout>
+ 		 
+ 		 <ListView
+ 		     android:id="@+id/list"
+ 		     android:layout_width="match_parent"
+ 		     android:layout_height="wrap_content"
+ 		     android:background="@color/DarkGray"
+ 		     android:paddingLeft="10dp"
+ 		     android:paddingTop="10dp"
+ 		     android:textAlignment="center" >
+
+        </ListView>
+ 		
+        
+    </LinearLayout>
+
+     
+
+</RelativeLayout>

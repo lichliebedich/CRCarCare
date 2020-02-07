@@ -1,0 +1,190 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="@color/SkyBlue"
+    tools:context="crcarcare.datasolution.app.crcarcare.MainActivity" >
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+<LinearLayout
+    android:id="@+id/header"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+	android:background="#6F4E37"
+    android:paddingBottom="5dip"
+    android:paddingTop="5dip" >
+
+                 <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_license_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="ทะเบียนรถ :"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_mileno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="เลขไมล์ :"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </LinearLayout>   
+      
+        <TextView
+            android:id="@+id/tv_Depart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="เลขที่ใบสั่งซ่อม :"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="16sp" />
+
+ 		<LinearLayout
+ 		    android:layout_width="match_parent"
+ 		    android:layout_height="wrap_content"
+ 		    android:orientation="vertical" >
+
+ 		    <TextView
+ 		        android:id="@+id/tv_brand"
+ 		        android:layout_width="wrap_content"
+ 		        android:layout_height="wrap_content"
+ 		        android:paddingLeft="10dp"
+ 		        android:paddingRight="20dp"
+ 		        android:paddingTop="10dp"
+ 		        android:text="ยี่ห้อ :"
+ 		        android:textAppearance="?android:attr/textAppearanceLarge"
+ 		        android:textSize="16sp" />
+
+ 		    <TextView
+ 		        android:id="@+id/tv_model"
+ 		        android:layout_width="wrap_content"
+ 		        android:layout_height="wrap_content"
+ 		        android:paddingLeft="10dp"
+ 		        android:paddingRight="40dp"
+ 		        android:paddingTop="10dp"
+ 		        android:text="รุ่น :"
+ 		        android:textAppearance="?android:attr/textAppearanceLarge"
+ 		        android:textSize="16sp" />
+
+ 	
+
+ 		    <TextView
+ 		        android:id="@+id/tv_vendorname"
+ 		        android:layout_width="wrap_content"
+ 		        android:layout_height="wrap_content"
+ 		        android:paddingLeft="10dp"
+ 		        android:paddingRight="20dp"
+ 		        android:paddingTop="10dp"
+ 		        android:text="ศูนย์บริการ:"
+ 		        android:textAppearance="?android:attr/textAppearanceLarge"
+ 		        android:textSize="16sp" />
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+ 		    <TextView
+ 		        android:id="@+id/tv_infovendortel"
+ 		        android:layout_width="wrap_content"
+ 		        android:layout_height="wrap_content"
+ 		        android:paddingLeft="10dp"
+ 		        android:paddingRight="20dp"
+ 		        android:paddingTop="10dp"
+ 		        android:text="เบอร์โทร:"
+ 		        android:textAppearance="?android:attr/textAppearanceLarge"
+ 		        android:textSize="16sp" />
+
+ 		    <TextView
+ 		        android:id="@+id/tv_vendortel"
+ 		        android:layout_width="wrap_content"
+ 		        android:layout_height="wrap_content"
+ 		        android:clickable="true"
+ 		        android:paddingLeft="10dp"
+ 		        android:paddingRight="40dp"
+ 		        android:paddingTop="10dp"
+ 		        android:text="xx-xxxx-xxx"
+ 		        android:textAppearance="?android:attr/textAppearanceLarge"
+ 		        android:textColor="@color/Brown"
+ 		        android:textSize="16sp" />
+
+</LinearLayout>
+
+ 		    <TextView
+ 		        android:id="@+id/tv_custname"
+ 		        android:layout_width="wrap_content"
+ 		        android:layout_height="wrap_content"
+ 		        android:paddingLeft="10dp"
+ 		        android:paddingRight="20dp"
+ 		        android:paddingTop="10dp"
+ 		        android:text="ผู้แจ้งซ่อม:"
+ 		        android:textAppearance="?android:attr/textAppearanceLarge"
+ 		        android:textSize="16sp" />
+
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:paddingBottom="20dp" >
+            
+		       <TextView
+		           android:id="@+id/tv_infocusttel"
+		           android:layout_width="wrap_content"
+		           android:layout_height="wrap_content"
+		           android:paddingLeft="10dp"
+		           android:paddingRight="20dp"
+		           android:paddingTop="10dp"
+		           android:text="เบอร์โทร:"
+		           android:textAppearance="?android:attr/textAppearanceLarge"
+		           android:textSize="16sp" />
+		       
+ 		    <TextView
+ 		        android:id="@+id/tv_custtel"
+ 		        android:layout_width="wrap_content"
+ 		        android:layout_height="wrap_content"
+ 		        android:onClick="CustCall()"
+ 		        android:paddingLeft="10dp"
+ 		        android:paddingRight="40dp"
+ 		        android:paddingTop="10dp"
+ 		        android:text="xx-xxxx-xxx"
+ 		        android:textAppearance="?android:attr/textAppearanceLarge"
+ 		        android:textColor="@color/Brown"
+ 		        android:textSize="16sp" />
+
+ 		</LinearLayout>
+ 		<LinearLayout
+ 		     android:layout_width="match_parent"
+ 			    android:layout_height="wrap_content"
+ 			    android:orientation="vertical"
+ 			    android:paddingBottom="20dp" >
+ 		 <ListView
+ 		     android:id="@+id/list"
+ 		     android:layout_width="match_parent"
+ 		     android:layout_height="wrap_content"
+			 android:background="#d8f3ff"
+ 		     android:paddingLeft="10dp"
+ 		     android:paddingTop="10dp"
+ 		     android:textAlignment="center" >
+
+        </ListView>
+ 		
+        
+    </LinearLayout>
+</LinearLayout>   
+</RelativeLayout>

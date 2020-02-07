@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="crcarcare.datasolution.app.crcarcare">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".SpashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Page_Login" />
+        <activity android:name=".Page_RepairDetail" />
+        <activity android:name=".Page_RepairDetailPart" />
+        <activity android:name=".Page_RepairDepart" />
+        <activity android:name=".Page_Menu" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Page_InsuranceDetail" />
+        <activity android:name=".Page_SetPin" />
+        <activity android:name=".Page_Confirm_Pin" />
+        <activity android:name=".Page_LoginPin" />
+    </application>
+
+</manifest>

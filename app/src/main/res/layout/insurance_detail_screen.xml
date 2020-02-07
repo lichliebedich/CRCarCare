@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="@color/SkyBlue"
+    tools:context="crcarcare.datasolution.app.crcarcare.MainActivity" >
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+<LinearLayout
+    android:id="@+id/header"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+	android:background="#6F4E37"
+    android:paddingBottom="5dip"
+    android:paddingTop="5dip" >
+
+            <TextView
+                android:id="@+id/tv_license_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="ทะเบียนรถ :"
+				android:textColor="#c4c4c4"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+</LinearLayout>
+
+	<LinearLayout
+ 		    android:layout_width="match_parent"
+ 		    android:layout_height="wrap_content"
+ 		    android:orientation="vertical">
+
+		<TextView
+			android:id="@+id/tv_policy"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingLeft="10dp"
+			android:paddingTop="10dp"
+			android:text="กรมธรรม์เลขที่ :"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:textSize="16sp" />
+
+		<TextView
+ 		        android:id="@+id/tv_payinname"
+ 		        android:layout_width="wrap_content"
+ 		        android:layout_height="wrap_content"
+ 		        android:paddingLeft="10dp"
+ 		        android:paddingRight="40dp"
+ 		        android:paddingTop="10dp"
+ 		        android:text="บริษัทประกัน"
+ 		        android:textAppearance="?android:attr/textAppearanceLarge"
+ 		        android:textSize="16sp" />
+ 		    
+ 		    <TextView
+ 		        android:id="@+id/tv_periodfrom"
+ 		        android:layout_width="wrap_content"
+ 		        android:layout_height="wrap_content"
+ 		        android:paddingLeft="10dp"
+ 		        android:paddingRight="20dp"
+ 		        android:paddingTop="10dp"
+ 		        android:text="ประกันเริ่มวันที่ :"
+ 		        android:textAppearance="?android:attr/textAppearanceLarge"
+ 		        android:textSize="16sp" />
+
+ 		    <TextView
+ 		        android:id="@+id/tv_periodto"
+ 		        android:layout_width="wrap_content"
+ 		        android:layout_height="wrap_content"
+ 		        android:paddingLeft="10dp"
+ 		        android:paddingRight="40dp"
+ 		        android:paddingTop="10dp"
+ 		        android:text="สิ้นสุดวันที่ :"
+ 		        android:textAppearance="?android:attr/textAppearanceLarge"
+ 		        android:textSize="16sp" />
+
+ 		    <TextView
+ 		        android:id="@+id/tv_suminsured"
+ 		        android:layout_width="wrap_content"
+ 		        android:layout_height="wrap_content"
+ 		        android:paddingLeft="10dp"
+ 		        android:paddingRight="20dp"
+ 		        android:paddingTop="10dp"
+ 		        android:text="ทุนประกัน :"
+ 		        android:textAppearance="?android:attr/textAppearanceLarge"
+ 		        android:textSize="16sp" />
+
+ 		    <TextView
+ 		        android:id="@+id/tv_mandatory"
+ 		        android:layout_width="wrap_content"
+ 		        android:layout_height="wrap_content"
+ 		        android:paddingLeft="10dp"
+ 		        android:paddingRight="20dp"
+ 		        android:paddingTop="10dp"
+ 		        android:text="เบี้ยประกันหลัก :"
+ 		        android:textAppearance="?android:attr/textAppearanceLarge"
+ 		        android:textSize="16sp" />
+
+
+</LinearLayout>
+</LinearLayout>
+</RelativeLayout>

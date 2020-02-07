@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">FX Service</string>
+<string name="title_activity_spash_screen">SpashScreen</string>
+<string name="hello_world">Hello world!</string>
+<string name="action_settings">Settings</string>
+<string name="spash_title">FX Service</string>
+<string name="desc">CARCARE</string>
+
+<string name="usernameDB">dsviewcr</string>
+<string name="passwordDB">dsviewcrpass</string>
+<string name="Host_port">203.151.43.164:7111/Siamraj</string>
+
+<string-array name="department">
+    <item>-- เลือกแผนก --</item>
+    <item>AD</item>
+    <item>CR</item>
+    <item>CRB</item>
+    <item>CRM</item>
+    <item>CRO</item>
+    <item>LM</item>
+    <item>LMO</item>
+    <item>LMP</item>
+    <item>MD</item>
+    <item>OPL</item>
+</string-array>
+
+<string name="drawer_open">Slider Menu Opened</string>
+<string name="drawer_close">Slider Menu Closed</string>
+
+<!-- Nav Drawer Menu Items -->
+<string-array name="nav_drawer_items">
+    <item>ค้นหาด้วยเลขทะเบียน</item>
+    <item>ค้นหาด้วยชื่อไซต์</item>
+    <item>ภาษี</item>
+    <item>ประกันภัยรถยนต์</item>
+    <item>Siamraj Carrent</item>
+    <item>ทิพยประกันภัย</item>
+    <item>ประกันคุ้มภัย</item>
+    <item>กรุงเทพประกันภัย</item>
+    <item>What\'s Hot</item>
+    <item>ออกจากระบบ</item>
+</string-array>
+
+<!-- Nav Drawer List Item Icons -->
+<!-- Keep them in order as the titles are in -->
+<array name="nav_drawer_icons">
+    <item>@drawable/ic_home</item>
+    <item>@drawable/ic_people</item>
+    <item>@drawable/ic_photos</item>
+    <item>@drawable/ic_communities</item>
+    <item>@drawable/ic_pages</item>
+    <item>@drawable/ic_pages</item>
+    <item>@drawable/ic_pages</item>
+    <item>@drawable/ic_pages</item>
+    <item>@drawable/ic_whats_hot</item>
+    <item>@drawable/exit</item>
+</array>
+
+<!-- Content Description -->
+<string name="desc_list_item_icon">Item Icon</string>
+
+</resources>
+
